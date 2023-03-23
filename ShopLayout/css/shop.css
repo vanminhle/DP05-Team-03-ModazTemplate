@@ -67,7 +67,7 @@ h3 {
 
 /* image background */
 .parallax1 {
-    background-image: url('./images/bg-parallax1.jpg');
+    background-image: url('../images/bg-parallax1.jpg');
 }
 .parallax {
     width: 100%;
@@ -889,11 +889,6 @@ button:hover:before {
 }
 .flat-social li a:hover {
 	color: #f63440;
-}
-@media screen and (width < 1199px){
-    .mail-chimp .flat-social {
-        padding-left: 0;
-    }
 }
 
 
