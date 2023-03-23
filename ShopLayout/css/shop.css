@@ -535,6 +535,9 @@ h3 {
     color: #f63440;
     text-decoration: none;
 }
+.product-content.product-fourcolumn .product .product-item:nth-child(9){
+	clear: both;
+}
 .flat-color-list {
     margin-top: 2px;
 	/* margin-right:40px; */
