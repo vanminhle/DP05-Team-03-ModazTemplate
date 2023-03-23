@@ -373,6 +373,9 @@ button:hover:before {
   height: 14px;
 }
 
+.flat-color-list li a {
+  position: relative;
+}
 .flat-color-list li a.red {
   background-color: #ee1313;
 }
@@ -383,6 +386,57 @@ button:hover:before {
 
 .flat-color-list li a.black {
   background-color: #000;
+}
+
+.flat-color-list li a:hover:before {
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1.5);
+}
+
+.flat-color-list li a:before,
+.flat-color-list li a:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  transform: scale(1);
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  z-index: -1;
+}
+
+.flat-color-list li a.red:before {
+  border-color: #ee1313;
+}
+
+.flat-color-list li a.blue:before {
+  border-color: #7cc576;
+}
+
+.flat-color-list li a.black:before {
+  border-color: #000;
+}
+
+.flat-color-list li a:hover:before {
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1.5);
+}
+
+.flat-color-list li a:hover:after {
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1.25);
 }
 
 .product .product-item .add-to-cart {
@@ -397,10 +451,36 @@ button:hover:before {
   transform: translate(0px, 10px);
 }
 
-.product.style2 .product-item .like {
-  font-size: 14px;
-  line-height: 26px;
-  top: 20px;
+.flat-color-list li a:before,
+.flat-color-list li a:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  transform: scale(1);
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  z-index: -1;
+}
+
+.product .product-item:hover .add-to-cart,
+.product .product-item:hover .like {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transform: translate(0px, 0px);
+  -moz-transform: translate(0px, 0px);
+  -ms-transform: translate(0px, 0px);
+  -o-transform: translate(0px, 0px);
+  transform: translate(0px, 0px);
 }
 
 .product .product-item .add-to-cart a {
@@ -529,6 +609,10 @@ button:hover:before {
   display: block;
 }
 
+.product .product-item .sale {
+  background-color: #f63440;
+}
+
 /* Shipping */
 .bg-section.bg-color-f5f {
   background-color: #f5f5f5;
@@ -602,6 +686,10 @@ button:hover:before {
   line-height: 45px;
   color: #333;
   margin: 0 0 0 17px;
+}
+
+.flat-social li a:hover {
+  color: #f63440;
 }
 
 /* Form */
@@ -701,6 +789,10 @@ input::-webkit-input-placeholder {
   color: #333;
 }
 
+.widget.widget-link ul li a:hover {
+  color: #f63440;
+}
+
 .widget.widget-brand .logo-footer {
   margin-bottom: 16px;
 }
@@ -727,6 +819,10 @@ input::-webkit-input-placeholder {
 .footer-bottom .copyright a {
   color: #333;
   font-weight: 500;
+}
+
+.footer-bottom .copyright a:hover {
+  color: #f63440;
 }
 
 /* Responsive */
