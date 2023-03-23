@@ -405,6 +405,15 @@ article .more-link a:hover::after {
 
 
 /*===================== Mail ===================*/
+
+.flat-row {
+    clear: both;
+    display: block;
+    position: relative;
+    padding: 87px 0 63px 0px;    
+    overflow: hidden;
+}
+
 .mail-chimp {
     background: #f5f5f5;
 	padding:  34px 0px 31px 0px;
@@ -438,14 +447,6 @@ article .more-link a:hover::after {
 	padding-left: 70px;
 }
 
-.flat-row {
-    clear: both;
-    display: block;
-    position: relative;
-    padding: 87px 0 63px 0px;    
-    overflow: hidden;
-}
-
 /* Flat social
 ---------------------------------------------------------------*/
 .flat-social li {
@@ -462,6 +463,68 @@ article .more-link a:hover::after {
 .flat-social li a:hover {
 	color: #f63440;
 }
+
+/*===================== Footer ===========================*/
+/* Footer */
+.footer {
+    padding: 55px 0 9px;
+    display: block;
+  }
+  
+  .widget {
+    margin-bottom: 49px;
+  }
+  
+  .widget ul {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .widget ul li {
+    list-style: none;
+  }
+  
+  .widget.widget-link ul li a {
+    line-height: 36px;
+    font-weight: 500;
+    color: #333;
+  }
+  
+  .widget.widget-link ul li a:hover {
+    color: #f63440;
+  }
+  
+  .widget.widget-brand .logo-footer {
+    margin-bottom: 16px;
+  }
+  
+  .widget.widget-brand .flat-contact li {
+    line-height: 28px;
+    font-weight: 500;
+  }
+  
+  .footer-bottom {
+    border-top: 1px solid #ebebeb;
+    padding: 14px 0;
+  }
+  
+  .copyright {
+    margin-bottom: 0;
+  }
+  
+  .footer-bottom .copyright {
+    line-height: 30px;
+    font-weight: 400;
+  }
+  
+  .footer-bottom .copyright a {
+    color: #333;
+    font-weight: 500;
+  }
+  
+  .footer-bottom .copyright a:hover {
+    color: #f63440;
+  }
 
 /*===================== Queries Media ===================*/
 
@@ -519,7 +582,13 @@ article .more-link a:hover::after {
         margin-top: 35px;
     }
 
+    .footer {
+        padding: 55px 0 9px;
+        display: block;
+    }
+
 }
+
 
 @media screen and (width < 767px)
 {
