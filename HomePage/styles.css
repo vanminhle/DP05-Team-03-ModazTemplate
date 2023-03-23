@@ -51,6 +51,26 @@ a {
   transition: all 0.3s ease-in-out;
 }
 
+a:hover,
+a:focus {
+  color: #f63440;
+  text-decoration: none;
+  outline: 0;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.gallery-button.bg-white {
+  font-size: 15px;
+  font-weight: 500;
+  background-color: #fff;
+}
+
+.gallery-button:hover {
+  background-color: #f63440;
+  color: #fff;
+}
+
 h3 {
   font-size: 22px;
   line-height: 30px;
@@ -127,6 +147,51 @@ h5 {
   margin: 0 auto;
 }
 
+/* button */
+button,
+input[type='button'] {
+  line-height: 1;
+  cursor: pointer;
+  border: none;
+}
+#subscribe-form button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  letter-spacing: -0.2px;
+}
+button {
+  border: none;
+}
+button {
+  font-weight: 700;
+  color: #fff;
+  line-height: 30px;
+  text-transform: uppercase;
+  padding: 7px 26px;
+  background-color: #f63440;
+
+  transition: all 0.3s ease 0s;
+}
+button {
+  z-index: 1;
+  position: relative;
+}
+button:before {
+  content: '';
+  width: 0%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #333333;
+  z-index: -1;
+  transition: all 0.3s ease 0s;
+}
+button:hover:before {
+  width: 100%;
+}
+
 /* Navbar */
 
 /* Slider */
@@ -183,6 +248,11 @@ h5 {
   font-weight: 700;
   text-transform: uppercase;
   line-height: 43px;
+}
+
+.gallery-button:hover {
+  background: #f63440 !important;
+  color: #fff;
 }
 
 .flat-image-box.row2 .item:first-child {
@@ -321,10 +391,10 @@ h5 {
   top: 100%;
   left: 0;
   width: 100%;
-  /* opacity: 0;
+  opacity: 0;
   visibility: hidden;
   transition: all 0.3s ease-in-out;
-  transform: translate(0px, 10px); */
+  transform: translate(0px, 10px);
 }
 
 .product.style2 .product-item .like {
@@ -345,10 +415,22 @@ h5 {
   position: absolute;
   top: 27px;
   right: 22px;
-  /* opacity: 0;
+  opacity: 0;
   visibility: hidden;
   transition: all 0.3s ease-in-out;
-  transform: translate(30px, 0px); */
+  transform: translate(30px, 0px);
+}
+
+.product .product-item:hover .add-to-cart,
+.product .product-item:hover .like {
+  opacity: 1;
+  visibility: visible;
+  transform: translate(0px, 0px);
+}
+
+.product .product-item .add-to-cart:hover {
+  background-color: #333333;
+  cursor: pointer;
 }
 
 /* New Trend */
@@ -404,6 +486,10 @@ h5 {
   font-weight: 700;
   text-transform: uppercase;
   line-height: 43px;
+}
+
+.button.bg-accent:hover {
+  background-color: #333;
 }
 
 /* Best Sale */
@@ -491,38 +577,20 @@ h5 {
 /* sign up section */
 .mail-chimp {
   background: #f5f5f5;
-  padding: 34px 0 31px 0px;
+  padding: 29px 0 0px 0px;
 }
 
 .mail-chimp .row {
   align-items: center;
 }
 
-.mail-chimp .flat-social {
-  float: right;
-  padding-left: 70px;
-}
-
-#subscribe-form {
-  position: relative;
-  float: left;
-  width: 67.5%;
-  padding-left: 15px;
-}
-
-#subscribe-form input[type='email'] {
-  height: 45px;
-}
-
-#subscribe-form button {
-  position: absolute;
-  top: 0;
-  right: 0;
-  letter-spacing: -0.2px;
+.mail-chimp .text {
+  margin-bottom: 25px;
 }
 
 .flat-social {
   margin: 0;
+  float: right;
 }
 
 .flat-social li {
@@ -534,6 +602,78 @@ h5 {
   line-height: 45px;
   color: #333;
   margin: 0 0 0 17px;
+}
+
+/* Form */
+#subscribe-form {
+  position: relative;
+  float: left;
+  width: 67.5%;
+  padding-left: 15px;
+}
+#subscribe-form input[type='email'] {
+  height: 45px;
+}
+input[type='email'] {
+  background-color: #ffffff;
+  height: 50px;
+  width: 100%;
+  padding-left: 17px;
+  line-height: 30px;
+  letter-spacing: 0.6px;
+  font-weight: 400;
+  outline: none;
+  border: 1px solid #ebebeb;
+  transition: all 0.3s ease-in-out;
+}
+button,
+input {
+  font-size: 100%;
+  margin: 0;
+  max-width: 100%;
+  vertical-align: baseline;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+input {
+  line-height: normal;
+}
+input {
+  background-image: -webkit-linear-gradient(
+    hsla(0, 0%, 100%, 0),
+    hsla(0, 0%, 100%, 0)
+  );
+}
+input[type='email']:focus {
+  border: 1px solid #f63440;
+  box-shadow: none;
+}
+input[type='email'],
+.uneditable-input,
+.dropdown-menu,
+.navbar .nav > .active > a,
+.navbar .nav > .active > a:hover,
+.navbar .nav > .active > a:focus {
+  -webkit-appearance: none;
+  text-shadow: none;
+  box-shadow: none;
+  color: #c5c5c5;
+}
+textarea:-moz-placeholder,
+textarea::-moz-placeholder,
+input:-moz-placeholder,
+input::-moz-placeholder {
+  color: #b3b7c8;
+  opacity: 1;
+}
+input:-ms-input-placeholder {
+  color: #b3b7c8;
+}
+textarea::-webkit-input-placeholder,
+input::-webkit-input-placeholder {
+  color: #b3b7c8;
+  opacity: 1;
 }
 
 /* Footer */
@@ -664,5 +804,14 @@ h5 {
 
   .flat-icon-box .inner {
     margin: 17.5px 0;
+  }
+}
+
+@media (width < 1199px) {
+  #subscribe-form {
+    position: relative;
+    float: left;
+    width: 100%;
+    padding-left: 0;
   }
 }
