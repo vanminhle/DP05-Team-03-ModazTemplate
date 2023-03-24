@@ -891,6 +891,66 @@ button:hover:before {
 	color: #f63440;
 }
 
-
+/*===================== Footer ===========================*/
+/* Footer */
+.footer {
+    padding: 55px 0 9px;
+    display: block;
+  }
+  
+  .widget {
+    margin-bottom: 49px;
+  }
+  
+  .widget ul {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .widget ul li {
+    list-style: none;
+  }
+  
+  .widget.widget-link ul li a {
+    line-height: 36px;
+    font-weight: 500;
+    color: #333;
+  }
+  
+  .widget.widget-link ul li a:hover {
+    color: #f63440;
+  }
+  
+  .widget.widget-brand .logo-footer {
+    margin-bottom: 16px;
+  }
+  
+  .widget.widget-brand .flat-contact li {
+    line-height: 28px;
+    font-weight: 500;
+  }
+  
+  .footer-bottom {
+    border-top: 1px solid #ebebeb;
+    padding: 14px 0;
+  }
+  
+  .copyright {
+    margin-bottom: 0;
+  }
+  
+  .footer-bottom .copyright {
+    line-height: 30px;
+    font-weight: 400;
+  }
+  
+  .footer-bottom .copyright a {
+    color: #333;
+    font-weight: 500;
+  }
+  
+  .footer-bottom .copyright a:hover {
+    color: #f63440;
+  }
 
 
