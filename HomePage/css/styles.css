@@ -523,7 +523,7 @@ button:hover:before {
 
 /* New Trend */
 .bg-section.row-1 {
-  background: url(./images/bg-parallax3.jpg) no-repeat center center;
+  background: url(../images/bg-parallax3.jpg) no-repeat center center;
   background-size: cover;
 }
 

@@ -90,9 +90,11 @@ input, button {
 
 
 .header {
-    position: relative;
+    position: fixed;
 	box-shadow: 0px 5px 14.25px 0.75px rgba(36, 11, 12, 0.05); 
 	z-index: 99;
+    background-color: #fff;
+    width: 100%;
 }
 
 header .container .logo {
@@ -123,137 +125,70 @@ header .menu-list {
 
 
 /* Carousel */
-
-.boxed .carousel {
-    /* max-height: 886px; */
-    height: 886px;
-    margin: 0;
+.tp-bullets {
+    visibility: visible !important;
+    opacity: 1 !important;
 }
 
-
-.boxed .carousel .carousel-inner,
-.boxed .carousel .carousel-item {
-    height: 100%;
-}
-
-.boxed .carousel .carousel-item img{
-    height: 100% !important;
-    object-fit: cover;
-}
-
-.boxed .carousel .carousel-indicators li {
-    width: 12px;
-    height: 12px;
+.tp-bullet {
     border-radius: 50%;
-    margin-right: 5px;
-    margin-left: 5px;
 }
-
-.boxed .carousel .carousel-indicators .active {
+.tp-bullet.selected, .tp-bullet:hover {
+    background: #f63440 !important;
+}
+.tp-caption > .btn {
     background-color: #f63440;
+    padding: 12px 25px;
+    border-radius: 0;
+    text-align: center;
+    margin-right: 20px;
 }
-
-.carousel .w-rapcontent1 {
-    position: absolute;
-    top: 30%;
-    left: 10%;
+.tp-caption > .btn:hover {
+    background-color: #333;
 }
-
-.carousel .w-rapcontent1 .ct-c-style1 .content-inside1 > p {
+.tp-caption > .btn a  {
+    font-size: 14px;
     color: #fff;
 }
 
-.carousel .w-rapcontent1 .ct-c-style1 .content-inside1 p:nth-child(1){
-    line-height: 35px;
-    font-weight: 200;
-    font-size: 24px;
-    text-transform: uppercase;
-}
-.carousel .w-rapcontent1 .ct-c-style1 .content-inside1 p:nth-child(2){
-    font-size: 52px;
-    line-height: 60px;
-}
-.carousel .w-rapcontent1 .ct-c-style1 .content-inside1 p:nth-child(3){
-    font-size: 18px;
-    font-weight: 200;    
-    text-transform: uppercase;
+.t-m-middle {
+    padding-right: 28px;
 }
 
-.carousel .w-rapcontent1 .ct-c-style1 .content-inside1 div,
-.carousel .w-rapcontent2 .content-inside2 .btn
-{
-    padding: 0px 36px;
-    margin-top: 30px;
-    width: 150px;
-    line-height: 46px;
-    text-align: center;
-    background-color: #f63440;
-}
-.carousel .w-rapcontent1 .ct-c-style1 .content-inside1 div a,
-.carousel .w-rapcontent2 .content-inside2 .btn a
-{
-    color:#fff;
+.text-line {
+	display: inline-block;
+	width: 50px;
+	height: 2px;
+	background-color: rgba(51,51,51,0.1);
+	position: relative;
+	top: -7px;
 }
 
-.carousel .w-rapcontent1 .ct-c-style1 .content-inside1 div:hover,
-.carousel .w-rapcontent2 .content-inside2 .btn:hover
-{
-    background-color: #333;
+.text-line.left {
+	left: -14px;
+}
+
+.text-line.right {
+	right: -7px;
+}
+
+.text-333 {
+	color: #333333 !important;
 }
 
 
-.carousel .w-rapcontent2 {
-    top: 30%;
-    position: absolute;
-    right: 11%;
-    text-align: center;
+.font-weight-300 {
+	font-weight: 300 !important;
 }
 
-.carousel .w-rapcontent2 .tile-ct2 span{
-     margin: 0px 8px;
-     display: inline-block;
-}
-.carousel .w-rapcontent2 .tile-ct2 span:nth-child(1),
-.carousel .w-rapcontent2 .tile-ct2 span:nth-child(3)
-{
-     background-color: #3333331a;
-     width: 50px;
-     height: 2px;
-     margin: 7px 0px;
-}
-.carousel .w-rapcontent2 .tile-ct2 span:nth-child(2){
-    font-size: 22px;
-    color:#333;
-    font-weight: 200;
+.font-weight-400 {
+	font-weight: 400 !important;
 }
 
-.carousel .w-rapcontent2 .content-inside2 p:nth-child(2) {
-    font-size: 130px;
-    color:#333;
-    line-height: 130px;
-}
-.carousel .w-rapcontent2 .content-inside2 p:nth-child(3) {
-    font-size: 48px;
-    color:#333;
-    line-height: 60px;
+.text-accent {
+	color: #f63440 !important;
 }
 
-.carousel .w-rapcontent2 .content-inside2 p:nth-child(3) span {
-    color: #f63440
-}
-
-
-
-
-
-
-.wrap_rev_slider {
-    position: relative;
-    width: 100%;
-    height: auto;
-    margin-top: 0px;
-    margin-bottom: 0px;
-}
 
 
 .main-nav  ul  li  {
