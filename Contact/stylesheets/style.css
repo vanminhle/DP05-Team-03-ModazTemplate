@@ -26,10 +26,12 @@ h2,
 img,
 html,
 i,
+ul,
 li,
 p,
 section,
-ul {
+footer
+ {
   font-family: inherit;
   font-size: 100%;
   font-weight: inherit;
@@ -227,7 +229,8 @@ button:hover:before {
 }
 
 h1,
-h2 {
+h2,
+h3 {
   font-weight: 500;
   color: #333333;
 }
@@ -240,6 +243,11 @@ h2 {
   font-size: 24px;
   line-height: 30px;
   color: #252525;
+}
+
+h3 {
+  font-size: 22px;
+  line-height: 30px;
 }
 
 .boxed {
@@ -338,3 +346,126 @@ h2 {
     opacity: 0;
   }
 }
+/*===================== Send News ===========================*/
+
+.flat-row {
+  clear: both;
+  display: block;
+  position: relative;
+  padding: 87px 0 63px 0px;    
+  overflow: hidden;
+}
+
+.mail-chimp {
+  background: #f5f5f5;
+padding:  34px 0px 31px 0px;
+}
+
+.mail-chimp .text {
+margin-top: 6px;
+}
+
+#subscribe-form {
+position: relative;
+float: left;
+width: 67.5%;
+padding-left: 15px;
+}
+
+#subscribe-form input[type="email"] {
+height: 45px;
+}
+
+#subscribe-form button {
+position: absolute;
+top:  0;
+right: 0;
+letter-spacing: -0.2px;
+}
+
+.mail-chimp .flat-social {
+float: right;
+width:  32.5%;
+padding-left: 70px;
+}
+
+/* Flat social
+---------------------------------------------------------------*/
+.flat-social li {
+display: inline-block;
+}
+
+.flat-social li a {
+font-size: 18px;
+line-height: 45px;
+color:  #333333;
+margin:  0px 0px 0px 17px;
+}
+
+.flat-social li a:hover {
+color: #f63440;
+}
+
+
+/*===================== Footer ===========================*/
+/* Footer */
+.footer {
+  padding: 55px 0 9px;
+  /* display: block; */
+}
+
+.widget {
+  margin-bottom: 49px;
+}
+
+.widget ul {
+  margin: 0;
+  padding: 0;
+}
+
+.widget ul li {
+  list-style: none;
+}
+
+.widget.widget-link ul li a {
+  line-height: 36px;
+  font-weight: 500;
+  color: #333;
+}
+
+.widget.widget-link ul li a:hover {
+  color: #f63440;
+}
+
+.widget.widget-brand .logo-footer {
+  margin-bottom: 16px;
+}
+
+.widget.widget-brand .flat-contact li {
+  line-height: 28px;
+  font-weight: 500;
+}
+
+.footer-bottom {
+  border-top: 1px solid #ebebeb;
+  padding: 14px 0;
+}
+
+.copyright {
+  margin-bottom: 0;
+}
+
+.footer-bottom .copyright {
+  line-height: 30px;
+  font-weight: 400;
+}
+
+.footer-bottom .copyright a {
+  color: #333;
+  font-weight: 500;
+}
+
+.footer-bottom .copyright a:hover {
+  color: #f63440;
+}
+
