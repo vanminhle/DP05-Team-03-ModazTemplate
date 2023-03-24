@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,500,600,700%7C");
-
 *{
     margin: 0px;
     padding: 0px;
@@ -66,14 +65,13 @@ h3 {
 
 
 /* image background */
-.parallax1 {
-    background-image: url('../ShopImages/bg-parallax1.jpg');
-}
 .parallax {
     width: 100%;
     background-attachment: fixed;
-    background-position: 50% 16px;
-	background-repeat: no-repeat;
+    background-position: 50% 0px;
+}
+.parallax1 {
+    background-image: url('../ShopImages/bg-parallax1.jpg');
 }
 .breadcrumbs ul li {
 	display: inline-block;
