@@ -1,0 +1,257 @@
+/* Row
+---------------------------------------------------------------*/
+.flat-row {
+  clear: both;
+  display: block;
+  position: relative;
+  padding: 87px 0 63px 0px;
+  overflow: hidden;
+}
+
+.flat-row.flat-error {
+  padding: 180px 0px 189px 0px;
+}
+
+.flat-row.flat-coming-soon {
+  padding: 218px 0px 212px 0px;
+}
+
+.flat-row.flat-iconbox {
+  padding: 36px 0px 20px 0px;
+}
+
+.flat-row.flat-contact {
+  padding: 32px 0px 73px 0px;
+}
+
+/* Flat title
+---------------------------------------------------------------*/
+.flat-title {
+  margin-bottom: 40px;
+}
+
+/* Title section
+---------------------------------------------------------------*/
+.title-section {
+  position: relative;
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.title-section.margin_bottom_17 {
+  margin-bottom: 17px;
+}
+
+.title-section .title {
+  font-size: 32px;
+  line-height: 66px;
+  font-weight: 500;
+  color: #333333;
+  position: relative;
+}
+
+.title-section .title:before {
+  content: "";
+  width: 60px;
+  height: 2.5px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #f63440;
+  margin: 0 auto;
+}
+
+/* Empy space
+---------------------------------------------------------------*/
+.divider {
+  clear: both;
+  display: block;
+  height: 49px;
+}
+
+.divider.h0 {
+  height: 0px;
+}
+
+.divider.h43 {
+  height: 43px;
+}
+/* Flat accordion
+---------------------------------------------------------------*/
+.flat-accordion .flat-toggle {
+  margin-bottom: 15px;
+}
+
+.flat-accordion .flat-toggle .toggle-title {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #111111;
+  border-bottom: 1px solid #ebebeb;
+  padding-bottom: 15px;
+  margin-bottom: 11px;
+  cursor: pointer;
+}
+
+.flat-accordion .flat-toggle .toggle-content {
+  border-bottom: 1px solid #ebebeb;
+  padding-bottom: 14px;
+}
+
+.flat-accordion .flat-toggle .toggle-content p {
+  line-height: 24px;
+  margin-bottom: 25px;
+}
+
+/* Flat coming soon
+---------------------------------------------------------------*/
+.wrap-coming-soon {
+  color: #ffffff;
+}
+
+.wrap-coming-soon .header-coming-soon {
+  margin-bottom: 42px;
+}
+
+.wrap-coming-soon .header-coming-soon h2.sup-title {
+  line-height: 58px;
+  color: #fff;
+}
+
+.wrap-coming-soon .header-coming-soon .title {
+  font-size: 72px;
+  line-height: 90px;
+  font-weight: 500;
+}
+
+/* Countdown */
+.wrap-countdown {
+  margin-bottom: 55px;
+}
+
+.countdown .square {
+  display: inline-block;
+}
+
+.countdown .square .numb {
+  font-size: 48px;
+  line-height: 90px;
+  font-weight: 500;
+  color: #333333;
+  width: 90px;
+  height: 90px;
+  background: rgba(255, 255, 255, 0.9);
+  text-align: center;
+  margin: 0px 35px 18px 35px;
+}
+
+.countdown .square .text {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 500;
+}
+
+/* Style 1 */
+.countdown.style-1 .square .numb {
+  color: #f63440;
+  margin: 0px 15px 8px 15px;
+}
+
+.countdown.style-1 .square .text {
+  text-transform: uppercase;
+}
+
+/* Flat button
+---------------------------------------------------------------*/
+.flat-button button {
+  margin: 0px 9px;
+}
+
+.flat-button button.bg-white {
+  background: #fff;
+  color: #f63440;
+}
+
+.flat-button button.bg-white:hover {
+  color: #fff;
+}
+
+/* Flat map
+---------------------------------------------------------------*/
+.flat-map {
+  height: 383px;
+}
+
+/* Flat contact
+---------------------------------------------------------------*/
+.wrap-contact {
+  width: 100%;
+}
+
+.wrap-contact .contact-name,
+.wrap-contact .contact-email,
+.wrap-contact .contact-subject {
+  float: left;
+  width: 33.3333%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.wrap-contact .contact-message,
+.wrap-contact .form-submit {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.wrap-contact.style2 .contact-name input[type="text"],
+.wrap-contact.style2 .contact-email input[type="email"],
+.wrap-contact.style2 .contact-subject input[type="text"],
+.wrap-contact.style2 .contact-message textarea {
+  border: none;
+  border-bottom: 1px solid #ebebeb;
+  font-size: 18px;
+  line-height: 37px;
+  padding-left: 0px;
+}
+
+.wrap-contact.style2 .contact-name input[type="text"],
+.wrap-contact.style2 .contact-email input[type="email"],
+.wrap-contact.style2 .contact-subject input[type="text"] {
+  height: 37px;
+}
+
+.wrap-contact label {
+  font-size: 18px;
+  margin-bottom: 0px;
+  line-height: 18px;
+}
+
+.wrap-contact.style2 .contact-message {
+  margin-bottom: 33px;
+}
+
+.wrap-contact.style2 .contact-message textarea {
+  height: 84px;
+  padding: 38px 0px 0px 0px;
+}
+
+.wrap-contact.style2 input[type="text"]:focus,
+.wrap-contact.style2 input[type="email"]:focus,
+.wrap-contact.style2 textarea:focus {
+  border-bottom: 1px solid #f63440;
+}
+
+.wrap-contact .form-submit button {
+  padding: 7px 51px;
+  font-size: 18px;
+  font-family: "Poppins", sans-serif;
+}
+/*---iconbox-----*/
+.iconbox .box-header.nomargin {
+  margin: 0;
+}
+.iconbox .box-header .icon i {
+  font-size: 30px;
+  line-height: 30px;
+  color: #f63440;
+  font-weight: 400;
+}
