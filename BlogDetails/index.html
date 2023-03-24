@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- Bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+      crossorigin="anonymous"
+    />
+    <!-- Adding css -->
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/T-06.css" />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+      crossorigin="anonymous"
+    />
+    <!-- Owl Carousel -->
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,500,600,700%7C"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="header_sticky header-style-1 has-menu-extra">
+    <div id="loading-overlay">
+      <div class="loader"></div>
+    </div>
+    <div class="boxed">
+      <!-- Nav Bar -->
+      <header id="header" class="header header-container">
+        <div class="container clearfix" id="site-header-inner">
+          <div class="logo clearfix" id="logo">
+            <a href="index.html" title="logo">
+              <img
+                src="./images/logo@2x.png"
+                alt="img"
+                width="107"
+                height="24"
+                data-retina="images/logo@2x.png"
+              />
+            </a>
+          </div>
+          <div class="mobile-btn">
+            <span></span>
+          </div>
+          <div class="menu-list" id="menubar-list">
+            <nav class="main-nav" id="mobile-nav">
+              <ul>
+                <li>
+                  <a href="index.html" title="HOME">HOME</a>
+                  <ul class="submenu">
+                    <li><a href="">HomePage Style 1</a></li>
+                    <li><a href="">HomePage Style 2</a></li>
+                    <li><a href="">HomePage Style 3</a></li>
+                    <li><a href="">HomePage Style 4</a></li>
+                    <li><a href="">HomePage Style 5</a></li>
+                    <li><a href="">HomePage Style 6</a></li>
+                    <li><a href="">HomePage Style 7</a></li>
+                    <li><a href="">HomePage Style 8</a></li>
+                    <li><a href="">HomePage Style 9</a></li>
+                    <li><a href="">HomePage Style 10</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="" title="SHOP">SHOP</a>
+                  <ul class="submenu">
+                    <li>
+                      <a href="../ShopLayout/shop.html" title="Shop Layouts"
+                        >Shop Layouts</a
+                      >
+                      <ul class="submenu">
+                        <li><a href="shop-3col.html">Three Columns</a></li>
+                        <li><a href="shop-4col.html">Four Columns</a></li>
+                        <li><a href="shop-5col.html">Five Columns</a></li>
+                        <li>
+                          <a href="shop-3col-slide.html"
+                            >Slidebar Three Columns</a
+                          >
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="" title="Shop Layouts">Shop Layouts</a>
+                      <ul class="submenu right-mn">
+                        <li>
+                          <a href="shop-detail-des.html">Details Description</a>
+                        </li>
+                        <li>
+                          <a href="shop-detail-exter.html">Details External</a>
+                        </li>
+                        <li>
+                          <a href="shop-detail-option.html">Details Options</a>
+                        </li>
+                        <li>
+                          <a href="shop-detail-fix.html">Details Fix</a>
+                        </li>
+                        <li>
+                          <a href="shop-detail-zoom.html">Details Zoom</a>
+                        </li>
+                        <li>
+                          <a href="shop-detail-group.html">Details Grouped</a>
+                        </li>
+                        <li>
+                          <a href="shop-detail-video.html">Details Video</a>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="" title="PAGE">PAGE</a>
+                  <ul class="submenu">
+                    <li><a>Coming soon</a></li>
+                    <li><a>Error 404</a></li>
+                    <li><a>FAQs</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="" title="BLOG">BLOG</a>
+                  <ul class="submenu">
+                    <li><a href="blog-list.html">Blog List Full</a></li>
+                    <li><a href="blog-list-1.html">Blog list Slide 1</a></li>
+                    <li><a href="blog-list-2.html">Blog list Slide 2</a></li>
+                    <li><a href="blog-grid.html">Blog Gird Full</a></li>
+                    <li><a href="blog-grid-1.html">Blog Gird Slide</a></li>
+                    <li><a href="blog-detail.html">Blog Details</a></li>
+                  </ul>
+                  <!-- /.submenu -->
+                </li>
+                <li>
+                  <a href="contact.html">CONTACT</a>
+                  <ul class="submenu right-submenu">
+                    <li><a href="contact.html">Contact Style 1</a></li>
+                    <li><a href="contact-v2.html">Contact Style 2</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <ul class="menu-ex">
+            <li>
+              <a href="#" class="ic-search"></a>
+              <form role="search" method="post" action="#" class="headerForm">
+                <input
+                  type="text"
+                  name="searchField"
+                  placeholder="Search..."
+                  id="search_field"
+                  class="search_field_h"
+                />
+              </form>
+            </li>
+            <li>
+              <a href="#" class="ic-usr"></a>
+            </li>
+            <li>
+              <a href="#" class="ic-cart active">
+                <span>3</span>
+              </a>
+              <div class="nav-shopping-cart">
+                <div class="widget-shopping-cart">
+                  <ul>
+                    <li><a>No items here</a></li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </header>
+
+      <!-- Page title -->
+      <div class="page-title parallax parallax1">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="page-title-heading">
+                <h1 class="title">Blog List</h1>
+              </div>
+              <div class="breadcrumbs">
+                <ul>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="blog-list-1.html">Blog</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /.page-title -->
+
+      <!-- Blog posts -->
+      <section class="blog-posts blog-detail">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-9">
+              <div class="post-wrap detail">
+                <article class="post clearfix">
+                  <div class="title-post">
+                    <h2>
+                      <a href="images/blog-details/bg-parallax1.jpg"
+                        >Anya Hindmarch Changes Strategy</a
+                      >
+                    </h2>
+                  </div>
+                  <!-- /.title-post -->
+                  <div class="content-post">
+                    <ul class="meta-post">
+                      <li class="author padding-left-2">
+                        <span>Posted By: </span><a href="#">Admin</a>
+                      </li>
+                      <li class="comment">
+                        <a href="#">10 Comment</a>
+                      </li>
+                      <li class="date">
+                        <span>Date 10/10/2018 </span>
+                      </li>
+                    </ul>
+                    <!-- /.meta-post -->
+                    <div class="featured-post">
+                      <img src="images/blog-details/21.jpg" alt="image" />
+                    </div>
+                    <div class="entry-post">
+                      <p>
+                        Earlier this month, the Selfridges Wonder Room welcomed
+                        a new addition to its star-studded and sparkling roster:
+                        Bucherer Fine Jewellery. Bucherer is a brand steeped in
+                        history; it was founded nearly 130 years ago in 1888 in
+                        Switzerland, the home of jewellery, and has been
+                        creating modern pieces with a rich heritage ever since.
+                        From the younger Peekaboo collection to the high design
+                        of the Viv- elle line, there’s something for everyone
+                        here.
+                      </p>
+                      <p>
+                        Diamond connoisseurs will fall for the carats nestled
+                        within Bucherer’s designs, whether they’re in the market
+                        for an engagement ring, a statement necklace or the
+                        perfect pear drop earrings to offset &nbsp; any evening
+                        look. But the collection we’re most excited for is
+                        Peekaboo. Think Marie Antoinette meets Glossier with a
+                        smattering of stones thrown in for good measure.
+                      </p>
+                      <p>
+                        It’s feminine and bold, innocent but statement-making,
+                        and romantic in all the right ways. With a fon- dant
+                        fancy colour palette of brilliant-cut stones set in gold
+                        and decorated with dinky diamonds to bring another level
+                        to the pieces, it hits the right notes every time.
+                      </p>
+                      <div class="box-detail">
+                        <h3>The best Jewellery 2018</h3>
+                        <p>
+                          This is jewellery to aspire to – pieces that will last
+                          a lifetime and be imbued with the kind of sentimen-
+                          tality that only jewellery can achieve. And Bucherer
+                          Fine Jeweller’s stellar work doesn’t stop there. For a
+                          more graphic and structural take on jewellery-box
+                          delights, look no further than the pear-shaped modern
+                          elegance of Lacrima – dainty, architectural and
+                          opulent in one fell swoop.
+                        </p>
+                      </div>
+                      <blockquote>
+                        <p>
+                          “Bucherer has a range of lines that will appeal to a
+                          range of women – and men – in this loud, busy modern
+                          world and cut through the noise with jewellery steeped
+                          in heritage and crafted by the best artisans Europe
+                          has to offer.”
+                        </p>
+                        <div class="name">
+                          <span>Ollie Schneider </span> -CEO DeerCreative
+                        </div>
+                      </blockquote>
+                    </div>
+                  </div>
+                  <!-- /.content-post -->
+                  <div class="direction">
+                    <ul class="tags-share clearfix">
+                      <li class="float-left">
+                        <div class="tags">
+                          <span>Tags:</span><a href="#">Decoration</a>,
+                          <a href="#">Fashion</a>, <a href="#">Bags</a>
+                        </div>
+                        <!-- /.tags -->
+                      </li>
+                      <li class="float-right">
+                        <div class="social-icon">
+                          <ul class="social-list">
+                            <li class="share">Share:</li>
+                            <li>
+                              <a href="#"
+                                ><i class="fa-brands fa-facebook-f"></i
+                              ></a>
+                            </li>
+                            <li>
+                              <a href="#"><i class="fa fa-twitter"></i></a>
+                            </li>
+                            <li>
+                              <a href="#"><i class="fa fa-google-plus"></i></a>
+                            </li>
+                            <li>
+                              <a href="#"><i class="fa fa-linkedin"></i></a>
+                            </li>
+                            <li>
+                              <a href="#"><i class="fa fa-envelope"></i></a>
+                            </li>
+                          </ul>
+                        </div>
+                        <!-- /.social-icon -->
+                      </li>
+                    </ul>
+                    <ul class="next-pre clearfix">
+                      <li>
+                        <div class="pre-content">
+                          <div class="btn-default btn-pre">
+                            <a href="#"><i class="fa fa-chevron-left"></i></a>
+                          </div>
+                          <div class="text text-pre">
+                            <text>Previous Reading</text>
+                            <h4>
+                              <a href="#"
+                                >Upto 50% offer For Men’s Bag – Black...</a
+                              >
+                            </h4>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="next-content">
+                          <div class="btn-default btn-next">
+                            <a href="#"><i class="fa fa-chevron-right"></i></a>
+                          </div>
+                          <div class="text text-next text-right">
+                            <span>Next Reading</span>
+                            <h4>
+                              <a href="#">Fall Summer Fashion Trends 2018</a>
+                            </h4>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </article>
+              </div>
+
+              <div class="main-single">
+                <div class="comments-area">
+                  <ol class="comment-list">
+                    <li class="comment">
+                      <article class="comment-body">
+                        <div class="comment-author">
+                          <img
+                            src="images/blog-details/comment1.png"
+                            alt="image"
+                          />
+                        </div>
+                        <!-- .comment-author -->
+                        <div class="comment-text">
+                          <div class="comment-metadata clearfix">
+                            <h5><a href="#">Jennifer Aniston</a></h5>
+                            <span class="date">October 19,2018</span>
+                          </div>
+                          <!-- .comment-metadata -->
+                          <div class="comment-content">
+                            <p>
+                              There are many variations of passages of Lorem
+                              Ipsum available, but the majority have alteration
+                              in some form, by injected humour, or randomised
+                              words which don't look even slightly believable.
+                              If you are going to use a passage of Lorem Ipsum,
+                              you need to be sure there isn't anything
+                              barrassing hidden in the middle of text.
+                            </p>
+                          </div>
+                          <!-- .comment-content -->
+
+                          <div class="reply">
+                            <a href="#" class="comment-like-link"
+                              ><i class="fa fa-thumbs-up"></i>108</a
+                            >
+                            <a href="#" class="comment-reply-link"
+                              ><i class="fa fa-pencil-square-o"></i>Reply</a
+                            >
+                          </div>
+                          <ol class="children">
+                            <li class="comment style1" id="comment-2">
+                              <article class="comment-body" id="div-comment-2">
+                                <div class="comment-author">
+                                  <img
+                                    src="images/blog-details/comment1-1.png"
+                                    alt="image"
+                                  />
+                                </div>
+                                <!-- .comment-author -->
+                                <div class="comment-text">
+                                  <div class="comment-metadata clearfix">
+                                    <h5><a href="#">John Smith</a></h5>
+                                    <span class="date">October 19,2018</span>
+                                  </div>
+                                  <!-- .comment-metadata -->
+                                  <div class="comment-content">
+                                    <p>
+                                      There are many variations of passages of
+                                      Lorem Ipsum available, but the majority
+                                      have alteration in some form, by injected
+                                      humour, or randomised words which don't
+                                      look even slightly believable...
+                                    </p>
+                                  </div>
+                                  <!-- .comment-content -->
+
+                                  <div class="reply">
+                                    <a href="#" class="comment-like-link"
+                                      ><i class="fa fa-thumbs-up"></i>108</a
+                                    >
+                                    <a href="#" class="comment-reply-link"
+                                      ><i class="fa fa-pencil-square-o"></i
+                                      >Reply</a
+                                    >
+                                  </div>
+                                </div>
+                              </article>
+                            </li>
+                          </ol>
+                        </div>
+                      </article>
+                    </li>
+                    <li class="comment">
+                      <article class="comment-body">
+                        <div class="comment-author">
+                          <img
+                            src="images/blog-details/comment2.png"
+                            alt="image"
+                          />
+                        </div>
+                        <!-- .comment-author -->
+                        <div class="comment-text">
+                          <div class="comment-metadata clearfix">
+                            <h5><a href="#">Wiliam Chrisper</a></h5>
+                            <span class="date">October 19,2018</span>
+                          </div>
+                          <!-- .comment-metadata -->
+                          <div class="comment-content">
+                            <p>
+                              There are many variations of passages of Lorem
+                              Ipsum available, but the majority have alteration
+                              in some form, by injected humour, or randomised
+                              words which don't look even slightly believable.
+                              If you are going to use a passage of Lorem Ipsum,
+                              you need to be sure there isn't anything
+                              barrassing hidden in the middle of text.
+                            </p>
+                          </div>
+                          <!-- .comment-content -->
+
+                          <div class="reply">
+                            <a href="#" class="comment-like-link"
+                              ><i class="fa fa-thumbs-up"></i>108</a
+                            >
+                            <a href="#" class="comment-reply-link"
+                              ><i class="fa-regular fa-pen-to-square"></i
+                              >Reply</a
+                            >
+                          </div>
+                        </div>
+                      </article>
+                    </li>
+                  </ol>
+
+                  <div class="comment-respond" id="respond">
+                    <div class="comment-reply-title">
+                      <h5>Write a Comment</h5>
+                      <p>
+                        Your email address will not be published. Required
+                        fields are marked *
+                      </p>
+                    </div>
+                    <form
+                      novalidate=""
+                      class="comment-form"
+                      id="commentform"
+                      method="post"
+                      action="#"
+                    >
+                      <p class="comment-form-comment">
+                        <label>Review*</label>
+                        <textarea
+                          class=""
+                          tabindex="4"
+                          name="comment"
+                          required
+                        ></textarea>
+                      </p>
+                      <p class="comment-name">
+                        <label>Name*</label>
+                        <input
+                          type="text"
+                          aria-required="true"
+                          size="30"
+                          value=""
+                          name="author"
+                          id="author"
+                        />
+                      </p>
+                      <p class="comment-email">
+                        <label>Email*</label>
+                        <input
+                          type="email"
+                          size="30"
+                          value=""
+                          name="email"
+                          id="email"
+                        />
+                      </p>
+                      <p class="comment-form-notify clearfix">
+                        <label>Notify me of new posts by email </label>
+                      </p>
+                      <p class="form-submit">
+                        <button class="comment-submit">Submit</button>
+                      </p>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="sidebar">
+                <div class="widget widget_categories">
+                  <h5 class="widget-title">Categories</h5>
+                  <ul>
+                    <li><a href="#">Fashion</a></li>
+                    <li class="active"><a href="#">Design</a></li>
+                    <li><a href="#">Trends</a></li>
+                    <li><a href="#">Uncategorized</a></li>
+                    <li><a href="#">Quote</a></li>
+                  </ul>
+                </div>
+                <!-- /.widget-categories -->
+
+                <div class="widget widget-news-latest">
+                  <h5 class="widget-title">New Latest</h5>
+                  <ul class="popular-news clearfix">
+                    <li>
+                      <h6>
+                        <a href="#">The Digital Style Guides</a>
+                      </h6>
+                      <a class="post_meta">August 19, 2018</a>
+                    </li>
+                    <li>
+                      <h6>
+                        <a href="#"
+                          >How to choice swimming trunks for this summer</a
+                        >
+                      </h6>
+                      <a class="post_meta">August 19, 2018</a>
+                    </li>
+                    <li>
+                      <h6><a href="#">Building a Brand for Startup</a></h6>
+                      <a class="post_meta">August 19, 20187</a>
+                    </li>
+                  </ul>
+                  <!-- /.popular-news -->
+                </div>
+                <!-- /.widget-news-latest -->
+
+                <div class="widget widget_tag">
+                  <h5 class="widget-title">Popular Tags</h5>
+                  <div class="tag-list">
+                    <a href="#">All products</a>
+                    <a href="#" class="active">Bags</a>
+                    <a href="#">Chair</a>
+                    <a href="#">Decoration</a>
+                    <a href="#">Fashion</a>
+                    <a href="#">Tie</a>
+                    <a href="#">Furniture</a>
+                    <a href="#">Accesories</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Sign up for Send Newsletter -->
+      <section class="flat-row mail-chimp">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="text">
+                <h3>Sign up for Send Newsletter</h3>
+              </div>
+            </div>
+            <div class="col-md-8">
+              <div class="subcribe clearfix">
+                <form
+                  action="#"
+                  method="post"
+                  accept-charset="utf-8"
+                  id="subscribe-form"
+                >
+                  <div class="subscribe-content">
+                    <div class="input">
+                      <input
+                        type="email"
+                        name="subscribe-email"
+                        placeholder="Your email"
+                      />
+                    </div>
+                    <div class="button">
+                      <button type="button">SUBCRIBE</button>
+                    </div>
+                  </div>
+                </form>
+                <ul class="flat-social">
+                  <li>
+                    <a href="#">
+                      <i class="fa fa-facebook"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="fa fa-twitter"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="fa fa-google"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="fa fa-behance"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="fa fa-linkedin"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Footer -->
+      <footer class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-6 col-md-3">
+              <div class="widget widget-link">
+                <ul>
+                  <li><a href="#">About Us</a></li>
+                  <li><a href="#">Online Store</a></li>
+                  <li><a href="#">Blog</a></li>
+                  <li><a href="#">Contact Us</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-3">
+              <div class="widget widget-link">
+                <ul>
+                  <li><a href="#">Login/ Register</a></li>
+                  <li><a href="#">Your Cart</a></li>
+                  <li><a href="#">Wishlist items</a></li>
+                  <li><a href="#">Your checkout</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-3">
+              <div class="widget widget-link">
+                <ul>
+                  <li><a href="faqs.html">FAQs</a></li>
+                  <li><a href="#">Term of service</a></li>
+                  <li><a href="#">Privacy Policy</a></li>
+                  <li><a href="#">Returns</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-3">
+              <div class="widget widget-brand">
+                <div class="logo logo-footer">
+                  <a href="index.html"
+                    ><img
+                      src="./images/logo@2x.png"
+                      alt="image"
+                      width="107"
+                      height="24"
+                  /></a>
+                </div>
+                <ul class="flat-contact">
+                  <li class="address">112 Kingdom, NA 12, New York</li>
+                  <li class="phone">+12 345 678 910</li>
+                  <li class="email">infor.deercreative@gmail.com</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+      <!-- Copyright Footer -->
+      <div class="footer-bottom">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <p class="copyright text-center">
+                Copyright @2018 <a href="#">Modaz</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a id="scrollTop" class="btnClickScroll"></a>
+    <!-- Javascript -->
+    <script src="./packages/jquery.min.js"></script>
+    <script src="./packages/jquery.hoverdir.js"></script>
+    <script src="packages/images-loaded.js"></script>
+    <script src="./packages/jquery.isotope.min.js"></script>
+    <script src="./packages/tether.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+      crossorigin="anonymous"
+    ></script>
+    <script src="packages/owl.carousel.min.js"></script>
+    <!-- owl carousel -->
+    <script src="packages/main.js"></script>
+  </body>
+</html>
