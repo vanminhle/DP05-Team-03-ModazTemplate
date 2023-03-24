@@ -126,7 +126,7 @@
     const scrollToTop = function () {
         $(window).scroll(function (e) {
             const valueScrollY = window.scrollY;
-            if(valueScrollY < 2000) {
+            if(valueScrollY < 500) {
                 $('.btnClickScroll').removeClass('activeBtnScroll')
             } else {
               $('.btnClickScroll').addClass('activeBtnScroll')
