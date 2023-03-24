@@ -8,8 +8,8 @@
     <script src="./Boostrap/jquery.min.js"></script>
     <script src="./Boostrap/tether.min.js"></script>
     <script src="./Boostrap/boostrap.min.js"></script>
-    <link rel="stylesheet" href="./css/shop.css" />
-    <link rel="stylesheet" href="./css/responsive.css"/>
+    <link rel="stylesheet" href="./ShopCss/shop.css" />
+    <link rel="stylesheet" href="./ShopCss/responsive.css"/>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
@@ -218,7 +218,7 @@
                 <li class="product-item">
                   <div class="product-thumb clearfix">
                     <a href="#">
-                      <img src="images/1.jpg" alt="image" />
+                      <img src="ShopImages/1.jpg" alt="image" />
                     </a>
                   </div>
                   <div class="product-info clearfix">
@@ -252,7 +252,7 @@
                 <li class="product-item">
                   <div class="product-thumb clearfix">
                     <a href="#">
-                      <img src="images/2.jpg" alt="image" />
+                      <img src="ShopImages/2.jpg" alt="image" />
                     </a>
                     <span class="new">New</span>
                   </div>
@@ -276,7 +276,7 @@
                 <li class="product-item">
                   <div class="product-thumb clearfix">
                     <a href="#">
-                      <img src="images/3.jpg" alt="image" />
+                      <img src="ShopImages/3.jpg" alt="image" />
                     </a>
                   </div>
                   <div class="product-info clearfix">
@@ -299,7 +299,7 @@
                 <li class="product-item">
                   <div class="product-thumb clearfix">
                     <a href="#">
-                      <img src="images/4.jpg" alt="image" />
+                      <img src="ShopImages/4.jpg" alt="image" />
                       <span class="new sale">Sale</span>
                     </a>
                   </div>
@@ -334,7 +334,7 @@
                 <li class="product-item">
                   <div class="product-thumb clearfix">
                     <a href="#">
-                      <img src="images/5.jpg" alt="image" />
+                      <img src="ShopImages/5.jpg" alt="image" />
                       <span class="new">New</span>
                     </a>
                   </div>
@@ -358,7 +358,7 @@
                 <li class="product-item">
                   <div class="product-thumb clearfix">
                     <a href="#">
-                      <img src="images/6.jpg" alt="image" />
+                      <img src="ShopImages/6.jpg" alt="image" />
                       <span class="new sale">Sale</span>
                     </a>
                   </div>
@@ -396,7 +396,7 @@
                 <li class="product-item">
                   <div class="product-thumb clearfix">
                     <a href="#">
-                      <img src="images/7.jpg" alt="image" />
+                      <img src="ShopImages/7.jpg" alt="image" />
                     </a>
                   </div>
                   <div class="product-info clearfix">
@@ -419,7 +419,7 @@
                 <li class="product-item">
                   <div class="product-thumb clearfix">
                     <a href="#">
-                      <img src="images/8.jpg" alt="image" />
+                      <img src="ShopImages/8.jpg" alt="image" />
                       <span class="new">New</span>
                     </a>
                   </div>
@@ -443,7 +443,7 @@
                 <li class="product-item">
                   <div class="product-thumb clearfix">
                     <a href="#">
-                      <img src="images/9.jpg" alt="image" />
+                      <img src="ShopImages/9.jpg" alt="image" />
                       <span class="new">New</span>
                     </a>
                   </div>
@@ -467,7 +467,7 @@
                 <li class="product-item">
                   <div class="product-thumb clearfix">
                     <a href="#">
-                      <img src="images/10.jpg" alt="image" />
+                      <img src="ShopImages/10.jpg" alt="image" />
                       <span class="new sale">Sale</span>
                     </a>
                   </div>
@@ -505,7 +505,7 @@
                 <li class="product-item">
                   <div class="product-thumb clearfix">
                     <a href="#">
-                      <img src="images/11.jpg" alt="image" />
+                      <img src="ShopImages/11.jpg" alt="image" />
                     </a>
                   </div>
                   <div class="product-info clearfix">
@@ -528,7 +528,7 @@
                 <li class="product-item">
                   <div class="product-thumb clearfix">
                     <a href="#">
-                      <img src="images/12.jpg" alt="image" />
+                      <img src="ShopImages/12.jpg" alt="image" />
                       <span class="new">New</span>
                     </a>
                   </div>
@@ -638,16 +638,6 @@
         </div>
       </div>
     </section>
-    <script type="text/javascript">
-      function change(iconID) {
-        if (document.getElementById(iconID).className == "search-product") {
-          document.getElementById(iconID).className = "search-product active";
-        } else {
-          document.getElementById(iconID).className = "search-product";
-        }
-      }
-    </script>
-
     <!-- Footer -->
     <footer class="footer">
       <div class="container">
@@ -687,7 +677,7 @@
               <div class="logo logo-footer">
                 <a href="index.html"
                   ><img
-                    src="./images/logo@2x.png"
+                    src="./ShopImages/logo@2x.png"
                     alt="image"
                     width="107"
                     height="24"
@@ -716,5 +706,14 @@
         </div>
       </div>
     </div>
+    <script type="text/javascript">
+      function change(iconID) {
+        if (document.getElementById(iconID).className == "search-product") {
+          document.getElementById(iconID).className = "search-product active";
+        } else {
+          document.getElementById(iconID).className = "search-product";
+        }
+      }
+    </script>
   </body>
 </html>
