@@ -1,0 +1,614 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,500,600,700|");
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+body {
+    font: 14px/26px "Poppins",sans-serif;
+    font-weight: 300;
+    background-color: #fff;
+    color: #6e6e6e;
+}
+
+
+a, article, div, h1, h2, p, section {
+    font-family: inherit;
+    font-size: 100%; 
+	font-weight: inherit; 
+	font-style: inherit; 
+	vertical-align: baseline; 
+	margin: 0; 
+	padding: 0; 
+	border: 0; 
+	outline: 0;
+	background: transparent;
+}
+
+/* article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { 
+    display: block;
+} */
+
+a {
+    color: #333333;
+    text-decoration: none;
+    /* support transition google chrome and safari */
+    -webkit-transition: all 0.3s ease-in-out;
+    /* support firefox */
+    -moz-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+
+a:hover,
+a:focus {
+	color: #f63440;
+	text-decoration: none;
+	outline: 0;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+
+h1, h2, h3 {
+    font-weight: 500;
+    color: #333;
+}
+
+h1 {
+    font-size: 48px;
+    line-height: 48px;
+}
+
+h2 {
+    font-size: 24px;
+    line-height: 30px;
+    color: #252525;
+}
+
+h3 {
+    font-size: 22px;
+    line-height: 30px;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+ul, ol {
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* 
+    Change style placeholder.
+    Support firefox
+*/
+input:-moz-placeholder,
+input::-moz-placeholder {		
+	color: #b3b7c8;
+	opacity: 1;
+}
+
+/* 
+    Change style placeholder.
+    Support google chrome and safari 
+*/
+input::-webkit-input-placeholder {
+	color: #b3b7c8;
+	opacity: 1;
+}
+
+input[type=email] {
+    background-color: #fff;
+    height: 50px;
+    width: 100%;
+    padding-left: 17px;
+    line-height: 30px;
+    letter-spacing: .6px;
+    font-weight: 400;
+    outline: none;
+    border: 1px solid #ebebeb;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+input[type=email]:focus {
+    border: 1px solid #f63440;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+button, input, select,textarea {
+		font-size: 100%;
+		margin: 0;
+		max-width: 100%;
+		vertical-align: baseline;
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+}
+
+button, input {
+	line-height: normal;
+}
+
+button, input[type="button"] {
+    line-height: 1;
+    cursor: pointer;
+    border: none;
+}
+
+button {
+    border: none;
+}
+
+button, input[type="button"] {
+    font-weight: 700;
+    color: #ffffff;
+	line-height: 30px;
+    text-transform: uppercase;
+    padding: 7px 26px;
+    background-color: #f63440;
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+}
+
+button {
+	z-index: 1;
+	position: relative;
+}
+
+button:before {
+	content: "";
+	width: 0%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: #333333;
+	z-index: -1;
+	-webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+}
+
+button:hover:before {
+	width: 100%;
+}
+
+/*===================== Blog Title ==================================*/
+.blog-title {
+    position: relative;
+    padding: 76px 0 77px;
+    text-align: center;
+}
+
+.blog-title .blog-title-heading .title{
+    margin-bottom: 23px;
+}
+
+/* Parallax */
+.parallax {
+    width: 100%;
+    background-attachment: fixed;
+    background-position: 50% 0px;
+}
+
+.parallax1 {
+	background-image: url('../BlogFull Page/images/bg-parallax1.jpg');
+}
+
+
+/*===================== Breadcrumbs ==================================*/
+.breadcrumbs ul li{
+    display: inline-block;
+    position: relative;
+    margin: 0px 9px 0px 7px;
+}
+
+.breadcrumbs ul li:before {
+    content: ">";
+    position: absolute;
+    top: 0;
+    right: -12px;
+}
+
+/* Last li of breadcrumbs is empty*/
+.breadcrumbs ul li:last-child::before {
+    content: '';
+    background: transparent;
+}
+
+.breadcrumbs ul li a {
+	color:  #6e6e6e;
+	font-weight: 400;
+}
+
+.breadcrumbs ul li a:hover {
+    color: #f63440;
+}
+
+/*===================== Blog Posts ==================================*/
+
+.blog-posts {
+    padding: 108px 0px 71px;
+}
+
+.blog-posts .post-wrap {
+	margin-bottom: 31px;
+}
+
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {
+    display: block;
+}
+
+article {
+    margin-bottom: 27px;
+}
+
+
+
+article .title-post {
+    position: relative;
+    padding-bottom: 25px;
+    margin-bottom: 20px;
+}
+
+article .title-post:after {
+	content: "";
+	width:  100%;
+	height: 1px;
+	background: #ebebeb;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+
+.post-wrap article .featured-post img {
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+article .featured-post {
+    margin-bottom: 25px;
+}
+
+article .small-post {
+    padding-left: 2px;
+}
+
+article .more-link a {
+    position: relative;
+    display: inline-block;
+    color: #f63440;
+    font-weight: 500;
+    line-height: 46px;
+    text-decoration: none;
+}
+
+article .more-link a::after {
+    font-size: 10px;
+    content: "\f101";
+    font-family: 'FontAwesome';
+    color: #f63440;
+    position: absolute;
+    top: 0;
+    right: -14px;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+article .more-link a:hover::after {
+    right: -20px;
+}
+
+
+/* grid post column */
+.grid-posts {
+	padding: 72px 0px 69px 0px;
+}
+
+.grid {
+	margin: 0px -15px;
+	overflow: hidden; 
+}
+
+.grid.three article {
+	float: left;
+	width: 33.333333%;
+	padding: 0px 15px;
+	margin-bottom: 32px;
+}
+
+.grid article .featured-post {
+    margin-bottom: 22px;
+}
+
+.grid article .small-post {
+	padding-left: 0;
+}
+
+.grid article .title-post {
+    margin-bottom: 6px;
+    padding: 0;
+}
+
+
+.grid article .title-post:after {
+    width: 0;
+    height: 0;
+}
+
+.grid article .title-post h2 {
+    font-size: 18px;
+    line-height: 30px;
+}
+
+/*===================== Pagination ==================================*/
+.flat-pagination {
+    padding-top: 40px;
+}
+
+.flat-pagination li {
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.blog-pagination.text-center .flat-pagination li {
+	margin: 0px 3px;
+}
+
+.flat-pagination li a {
+	font-size: 16px;
+	line-height: 30px;
+	font-weight: 500;
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	text-align: center;
+	line-height: 30px;
+	background:  transparent;
+	border: 1px solid #ebebeb;
+	border-radius: 2px;
+	color: #6e6e6e;
+}
+
+.flat-pagination li.active a,
+.flat-pagination li a:hover{
+	background: #f63440;
+	border: 1px solid #f63440;
+	color:  #ffffff;
+}
+
+/* Center */
+.blog-pagination.center {
+	text-align: center;
+	position: relative;
+	float: right;
+	width: 65%;
+}
+
+
+/*===================== Mail ===================*/
+
+.flat-row {
+    clear: both;
+    display: block;
+    position: relative;
+    padding: 87px 0 63px 0px;    
+    overflow: hidden;
+}
+
+.mail-chimp {
+    background: #f5f5f5;
+	padding:  34px 0px 31px 0px;
+}
+
+.mail-chimp .text {
+	margin-top: 6px;
+}
+
+#subscribe-form {
+	position: relative;
+	float: left;
+	width: 67.5%;
+	padding-left: 15px;
+}
+
+#subscribe-form input[type="email"] {
+	height: 45px;
+}
+
+#subscribe-form button {
+	position: absolute;
+	top:  0;
+	right: 0;
+	letter-spacing: -0.2px;
+}
+
+.mail-chimp .flat-social {
+	float: right;
+	width:  32.5%;
+	padding-left: 70px;
+}
+
+/* Flat social
+---------------------------------------------------------------*/
+.flat-social li {
+	display: inline-block;
+}
+
+.flat-social li a {
+	font-size: 18px;
+	line-height: 45px;
+	color:  #333333;
+	margin:  0px 0px 0px 17px;
+}
+
+.flat-social li a:hover {
+	color: #f63440;
+}
+
+/*===================== Footer ===========================*/
+/* Footer */
+.footer {
+    padding: 55px 0 9px;
+    display: block;
+  }
+  
+  .widget {
+    margin-bottom: 49px;
+  }
+  
+  .widget ul {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .widget ul li {
+    list-style: none;
+  }
+  
+  .widget.widget-link ul li a {
+    line-height: 36px;
+    font-weight: 500;
+    color: #333;
+  }
+  
+  .widget.widget-link ul li a:hover {
+    color: #f63440;
+  }
+  
+  .widget.widget-brand .logo-footer {
+    margin-bottom: 16px;
+  }
+  
+  .widget.widget-brand .flat-contact li {
+    line-height: 28px;
+    font-weight: 500;
+  }
+  
+  .footer-bottom {
+    border-top: 1px solid #ebebeb;
+    padding: 14px 0;
+  }
+  
+  .copyright {
+    margin-bottom: 0;
+  }
+  
+  .footer-bottom .copyright {
+    line-height: 30px;
+    font-weight: 400;
+  }
+  
+  .footer-bottom .copyright a {
+    color: #333;
+    font-weight: 500;
+  }
+  
+  .footer-bottom .copyright a:hover {
+    color: #f63440;
+  }
+
+/*===================== Queries Media ===================*/
+
+/* @media screen and (width > 1200px){
+    .container {
+        width: 1200px !important;
+        max-width: 100%;
+    }
+    
+} */
+
+@media screen and (width < 1199px) {
+    .mail-chimp .flat-social {
+        padding-left: 0;
+    }
+}
+
+@media screen and (width < 991px){
+    .blog-posts, .flat-row {
+        padding: 35px 0!important;
+    }
+
+    .grid.three article {
+        width: 50%;
+    }
+
+    article .small-post {
+        padding-left: 0 !important;
+    }
+
+    .blog-posts .post-wrap {
+        margin-bottom: 0 !important;
+    }
+
+    article .title-post {
+        padding-bottom: 15px;
+        margin-bottom: 15px;
+    }
+
+    .grid.three article:nth-child(3), .grid.three article:nth-child(5) {
+        /* delete float left and right of element 5 */
+		clear: both; 
+	} 
+
+    article .small-post {
+        padding-left: 0 !important;
+    }
+
+    #subscribe-form, .mail-chimp .flat-social {
+        float: none;
+        width: 100%;
+    }
+
+    .mail-chimp .flat-social {
+        margin-top: 35px;
+    }
+
+    .footer {
+        padding: 55px 0 9px;
+        display: block;
+    }
+
+}
+
+
+@media screen and (width < 767px)
+{
+    .grid.three article {
+        width: 50%;
+    }
+
+    .grid.three article:last-child, .grid.three article:nth-child(3), .grid.three article:nth-child(7) {
+        clear: both;
+    }
+
+    #subscribe-form {
+        padding-left: 0;
+        margin-top: 35px;
+    }
+}
+
+@media screen and (width < 479px)
+{
+    .grid.three article {
+        width: 100%;
+    }
+}
+
