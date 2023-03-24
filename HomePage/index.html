@@ -13,7 +13,8 @@
       crossorigin="anonymous"
     />
     <!-- Adding css -->
-    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/header.css" />
     <!-- Font Awesome -->
     <link
       rel="stylesheet"
@@ -30,11 +31,220 @@
     />
   </head>
   <body class="header_sticky header-style-1 has-menu-extra">
+    <div id="loading-overlay">
+      <div class="loader"></div>
+    </div>
     <div class="boxed">
       <!-- Nav Bar -->
+      <div>
+        <header id="header" class="header header-container">
+          <div class="container clearfix" id="site-header-inner">
+            <div class="logo clearfix" id="logo">
+              <a href="index.html" title="logo">
+                <img
+                  src="./images/logo@2x.png"
+                  alt="img"
+                  width="107"
+                  height="24"
+                  data-retina="images/logo@2x.png"
+                />
+              </a>
+            </div>
+            <div class="mobile-btn">
+              <span></span>
+            </div>
+            <div class="menu-list" id="menubar-list">
+              <nav class="main-nav" id="mobile-nav">
+                <ul>
+                  <li>
+                    <a href="index.html" title="HOME">HOME</a>
+                    <ul class="submenu">
+                      <li><a href="">HomePage Style 1</a></li>
+                      <li><a href="">HomePage Style 2</a></li>
+                      <li><a href="">HomePage Style 3</a></li>
+                      <li><a href="">HomePage Style 4</a></li>
+                      <li><a href="">HomePage Style 5</a></li>
+                      <li><a href="">HomePage Style 6</a></li>
+                      <li><a href="">HomePage Style 7</a></li>
+                      <li><a href="">HomePage Style 8</a></li>
+                      <li><a href="">HomePage Style 9</a></li>
+                      <li><a href="">HomePage Style 10</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="" title="SHOP">SHOP</a>
+                    <ul class="submenu">
+                      <li>
+                        <a href="" title="Shop Layouts">Shop Layouts</a>
+                        <ul class="submenu">
+                          <li><a href="shop-3col.html">Three Columns</a></li>
+                          <li><a href="shop-4col.html">Four Columns</a></li>
+                          <li><a href="shop-5col.html">Five Columns</a></li>
+                          <li>
+                            <a href="shop-3col-slide.html"
+                              >Slidebar Three Columns</a
+                            >
+                          </li>
+                        </ul>
+                      </li>
+                      <li>
+                        <a href="" title="Shop Layouts">Shop Layouts</a>
+                        <ul class="submenu right-mn">
+                          <li>
+                            <a href="shop-detail-des.html"
+                              >Details Description</a
+                            >
+                          </li>
+                          <li>
+                            <a href="shop-detail-exter.html"
+                              >Details External</a
+                            >
+                          </li>
+                          <li>
+                            <a href="shop-detail-option.html"
+                              >Details Options</a
+                            >
+                          </li>
+                          <li>
+                            <a href="shop-detail-fix.html">Details Fix</a>
+                          </li>
+                          <li>
+                            <a href="shop-detail-zoom.html">Details Zoom</a>
+                          </li>
+                          <li>
+                            <a href="shop-detail-group.html">Details Grouped</a>
+                          </li>
+                          <li>
+                            <a href="shop-detail-video.html">Details Video</a>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="" title="PAGE">PAGE</a>
+                    <ul class="submenu">
+                      <li><a>Coming soon</a></li>
+                      <li><a>Error 404</a></li>
+                      <li><a>FAQs</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="" title="BLOG">BLOG</a>
+                    <ul class="submenu">
+                      <li><a href="blog-list.html">Blog List Full</a></li>
+                      <li><a href="blog-list-1.html">Blog list Slide 1</a></li>
+                      <li><a href="blog-list-2.html">Blog list Slide 2</a></li>
+                      <li><a href="blog-grid.html">Blog Gird Full</a></li>
+                      <li><a href="blog-grid-1.html">Blog Gird Slide</a></li>
+                      <li><a href="blog-detail.html">Blog Details</a></li>
+                    </ul>
+                    <!-- /.submenu -->
+                  </li>
+                  <li>
+                    <a href="contact.html">CONTACT</a>
+                    <ul class="submenu right-submenu">
+                      <li><a href="contact.html">Contact Style 1</a></li>
+                      <li><a href="contact-v2.html">Contact Style 2</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <ul class="menu-ex">
+              <li>
+                <a href="#" class="ic-search"></a>
+                <form role="search" method="post" action="#" class="headerForm">
+                  <input
+                    type="text"
+                    name="searchField"
+                    placeholder="Search..."
+                    id="search_field"
+                    class="search_field_h"
+                  />
+                </form>
+              </li>
+              <li>
+                <a href="#" class="ic-usr"></a>
+              </li>
+              <li>
+                <a href="#" class="ic-cart active">
+                  <span>3</span>
+                </a>
+                <div class="nav-shopping-cart">
+                  <div class="widget-shopping-cart">
+                    <ul>
+                      <li><a>No items here</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </header>
+      </div>
 
       <!-- Slider -->
+      <div
+        id="carouselExampleIndicators"
+        class="carousel slide"
+        data-ride="carousel"
+      >
+        <ol class="carousel-indicators">
+          <li
+            data-target="#carouselExampleIndicators"
+            data-slide-to="0"
+            class="active"
+          ></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              class="d-block w-100"
+              src="images/slider/slider-bg-1.jpg"
+              alt="First slide"
+            />
 
+            <div class="w-rapcontent2">
+              <div class="content-full-box ct-c-style2">
+                <div class="content-inside2">
+                   <div class="tile-ct2 animate__animated animate__fadeInUp animate__delay-2s">
+                    <span></span>
+                    <span>Summer Fashion</span>
+                    <span></span>
+                   </div>
+                   <p class="animate__animated animate__fadeInUp animate__delay-2s">SALE</p>
+                   <p class="animate__animated animate__fadeInUp animate__delay-2s">UP TO <span>30%</span> OFF</p>
+                   <div class="btn animate__animated animate__fadeInUp animate__delay-2s">
+                      <a href="">BUY NOW</a>
+                   </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <div class="carousel-item">
+            <img
+              class="d-block w-100"
+              src="images/slider/slider-bg-5.jpg"
+              alt="Second slide"
+            />
+            <div class="w-rapcontent1">
+              <div class="content-full-box ct-c-style1">
+                <div class="content-inside1">
+                   <p class="animate__animated animate__fadeInUp animate__delay-2s">NEW TREND 2018</p>
+                   <p class="animate__animated animate__fadeInUp animate__delay-2s">New Collection</p>
+                   <p class="animate__animated animate__fadeInUp animate__delay-2s">BIG SALE OF THIS WEEK UP TO 30%</p>
+                   <div class="animate__animated animate__fadeInUp animate__delay-2s">
+                      <a href="">SHOP NOW</a>
+                   </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
       <!-- Gallery -->
       <section class="flat-row row-image-box">
         <div class="container">
@@ -53,6 +263,7 @@
                           >For Men’s</a
                         >
                       </div>
+                      <div class="overlay-effect bg-color-1"></div>
                     </div>
                   </div>
                 </div>
@@ -72,14 +283,9 @@
                           >For Kid’s</a
                         >
                       </div>
+                      <div class="overlay-effect bg-color-1"></div>
                       <div
                         class="overlay-effect bg-color-1"
-                        style="
-                          display: block;
-                          left: -100%;
-                          top: 0px;
-                          transition: all 300ms ease 0s;
-                        "
                       ></div>
                     </div>
                   </div>
@@ -98,7 +304,6 @@
                       </div>
                       <div
                         class="overlay-effect bg-color-1"
-                        style="display: none; left: -100%; top: 0px"
                       ></div>
                     </div>
                   </div>
@@ -121,12 +326,6 @@
                       </div>
                       <div
                         class="overlay-effect bg-color-1"
-                        style="
-                          display: none;
-                          left: -100%;
-                          top: 0px;
-                          transition: all 300ms ease 0s;
-                        "
                       ></div>
                     </div>
                   </div>
@@ -306,7 +505,7 @@
       </section>
 
       <!-- Best Sale -->
-      <section class="flat-row row-product-project style-1">
+      <section id="product-bar-menu" class="flat-row row-product-project style-1">
         <div class="container">
           <div class="row">
             <div class="col-md-12">
@@ -328,9 +527,8 @@
               <div class="product-content product-fourcolumn clearfix">
                 <ul
                   class="product style2 isotope-product clearfix"
-                  style="position: relative; height: 976px"
                 >
-                  <li class="product-item">
+                  <li class="product-item kid woman">
                     <div class="product-thumb clearfix">
                       <a href="#" class="product-thumb">
                         <img src="./images/best_sale/1.jpg" alt="image" />
@@ -362,7 +560,7 @@
                     </div>
                     <a href="#" class="like"><i class="fa fa-heart-o"></i></a>
                   </li>
-                  <li class="product-item">
+                  <li class="product-item accessories">
                     <div class="product-thumb clearfix">
                       <a href="#" class="product-thumb">
                         <img src="./images/best_sale/2.jpg" alt="image" />
@@ -384,7 +582,7 @@
                     </div>
                     <a href="#" class="like"><i class="fa fa-heart-o"></i></a>
                   </li>
-                  <li class="product-item">
+                  <li class="product-item  kid woman">
                     <div class="product-thumb clearfix">
                       <a href="#" class="product-thumb">
                         <img src="./images/best_sale/3.jpg" alt="image" />
@@ -405,7 +603,7 @@
                     </div>
                     <a href="#" class="like"><i class="fa fa-heart-o"></i></a>
                   </li>
-                  <li class="product-item">
+                  <li class="product-item accessories">
                     <div class="product-thumb clearfix">
                       <a href="#" class="product-thumb">
                         <img src="./images/best_sale/4.jpg" alt="image" />
@@ -441,7 +639,7 @@
                     </div>
                     <a href="#" class="like"><i class="fa fa-heart-o"></i></a>
                   </li>
-                  <li class="product-item">
+                  <li class="product-item man accessories">
                     <div class="product-thumb clearfix">
                       <a href="#" class="product-thumb">
                         <img src="./images/best_sale/5.jpg" alt="image" />
@@ -463,7 +661,7 @@
                     </div>
                     <a href="#" class="like"><i class="fa fa-heart-o"></i></a>
                   </li>
-                  <li class="product-item">
+                  <li class="product-item kid woman">
                     <div class="product-thumb clearfix">
                       <a href="#" class="product-thumb">
                         <img src="./images/best_sale/6.jpg" alt="image" />
@@ -499,7 +697,7 @@
                     </div>
                     <a href="#" class="like"><i class="fa fa-heart-o"></i></a>
                   </li>
-                  <li class="product-item">
+                  <li class="product-item man accessories">
                     <div class="product-thumb clearfix">
                       <a href="#" class="product-thumb">
                         <img src="./images/best_sale/7.jpg" alt="image" />
@@ -617,7 +815,162 @@
               <div class="title-section margin-bottom-40">
                 <h2 class="title">New Latest</h2>
               </div>
-              <div></div>
+              <div class="new-latest-wrap">
+                <div class="flat-new-latest flat-carousel-box post-wrap style3 data-effect clearfix" data-auto="false" data-column="3" data-column2="2" data-column3="1" data-gap="30" > 
+                    <div class="owl-carousel owl-theme">
+                        <article class="post clearfix">
+                            <div class="featured-post data-effect-item">
+                                <img src="images/blog/new-lastest-1-370x280.jpg" alt="image">
+                                <div class="content-post text-center">
+                                    <div class="title-post">
+                                        <h2><a href="blog-detail.html">Trend Of 2018</a></h2>
+                                    </div><!-- /.title-post -->
+                                    <ul class="meta-post">
+                                        <li class="date">
+                                            OCT 08, 2018 
+                                        </li>
+                                        <li class="author">
+                                            <a href="#">BY ADMIN</a>
+                                        </li>                                                
+                                    </ul><!-- /.meta-post -->
+                                    <div class="entry-post">
+                                        <p>This is Heading the bank manager long ago won the battle for the heart of...</p>
+                                        <div class="more-link">
+                                            <a href="blog-detail.html">READ MORE</a>
+                                        </div>
+                                    </div>
+                                </div><!-- /.content-post -->
+                                <div class="overlay-effect bg-overlay-black"></div>
+                            </div>                                            
+                        </article><!-- /.post -->
+                        <article class="post clearfix">
+                            <div class="featured-post data-effect-item">
+                                <img src="images/blog/new-lastest-2-370x280.jpg" alt="image">
+                                <div class="content-post text-center">
+                                    <div class="title-post">
+                                        <h2><a href="blog-detail.html">Trend Of 2018</a></h2>
+                                    </div><!-- /.title-post -->
+                                    <ul class="meta-post">
+                                        <li class="date">
+                                            OCT 08, 2018 
+                                        </li>
+                                        <li class="author">
+                                            <a href="#">BY ADMIN</a>
+                                        </li>                                                
+                                    </ul><!-- /.meta-post -->
+                                    <div class="entry-post">
+                                        <p>This is Heading the bank manager long ago won the battle for the heart of...</p>
+                                        <div class="more-link">
+                                            <a href="blog-detail.html">READ MORE</a>
+                                        </div>
+                                    </div>
+                                </div><!-- /.content-post -->
+                                <div class="overlay-effect bg-overlay-black"></div>
+                            </div>                                            
+                        </article><!-- /.post -->
+                        <article class="post clearfix">
+                            <div class="featured-post data-effect-item">
+                                <img src="images/blog/new-lastest-3-370x280.jpg" alt="image">
+                                <div class="content-post text-center">
+                                    <div class="title-post">
+                                        <h2><a href="blog-detail.html">Trend Of 2018</a></h2>
+                                    </div><!-- /.title-post -->
+                                    <ul class="meta-post">
+                                        <li class="date">
+                                            OCT 08, 2018 
+                                        </li>
+                                        <li class="author">
+                                            <a href="#">BY ADMIN</a>
+                                        </li>                                                
+                                    </ul><!-- /.meta-post -->
+                                    <div class="entry-post">
+                                        <p>This is Heading the bank manager long ago won the battle for the heart of...</p>
+                                        <div class="more-link">
+                                            <a href="blog-detail.html">READ MORE</a>
+                                        </div>
+                                    </div>
+                                </div><!-- /.content-post -->
+                                <div class="overlay-effect bg-overlay-black"></div>
+                            </div>                                            
+                        </article><!-- /.post --> 
+                        <article class="post clearfix">
+                            <div class="featured-post data-effect-item">
+                                <img src="images/blog/new-lastest-1-370x280.jpg" alt="image">
+                                <div class="content-post text-center">
+                                    <div class="title-post">
+                                        <h2><a href="blog-detail.html">Trend Of 2018</a></h2>
+                                    </div><!-- /.title-post -->
+                                    <ul class="meta-post">
+                                        <li class="date">
+                                            OCT 08, 2018 
+                                        </li>
+                                        <li class="author">
+                                            <a href="#">BY ADMIN</a>
+                                        </li>                                                
+                                    </ul><!-- /.meta-post -->
+                                    <div class="entry-post">
+                                        <p>This is Heading the bank manager long ago won the battle for the heart of...</p>
+                                        <div class="more-link">
+                                            <a href="blog-detail.html">READ MORE</a>
+                                        </div>
+                                    </div>
+                                </div><!-- /.content-post -->
+                                <div class="overlay-effect bg-overlay-black"></div>
+                            </div>                                            
+                        </article><!-- /.post -->
+                        <article class="post clearfix">
+                            <div class="featured-post data-effect-item">
+                                <img src="images/blog/new-lastest-2-370x280.jpg" alt="image">
+                                <div class="content-post text-center">
+                                    <div class="title-post">
+                                        <h2><a href="blog-detail.html">Trend Of 2018</a></h2>
+                                    </div><!-- /.title-post -->
+                                    <ul class="meta-post">
+                                        <li class="date">
+                                            OCT 08, 2018 
+                                        </li>
+                                        <li class="author">
+                                            <a href="#">BY ADMIN</a>
+                                        </li>                                                
+                                    </ul><!-- /.meta-post -->
+                                    <div class="entry-post">
+                                        <p>This is Heading the bank manager long ago won the battle for the heart of...</p>
+                                        <div class="more-link">
+                                            <a href="blog-detail.html">READ MORE</a>
+                                        </div>
+                                    </div>
+                                </div><!-- /.content-post -->
+                                <div class="overlay-effect bg-overlay-black"></div>
+                            </div>                                            
+                        </article><!-- /.post -->
+                        <article class="post clearfix">
+                            <div class="featured-post data-effect-item">
+                                <img src="images/blog/new-lastest-3-370x280.jpg" alt="image">
+                                <div class="content-post text-center">
+                                    <div class="title-post">
+                                        <h2><a href="blog-detail.html">Trend Of 2018</a></h2>
+                                    </div><!-- /.title-post -->
+                                    <ul class="meta-post">
+                                        <li class="date">
+                                            OCT 08, 2018 
+                                        </li>
+                                        <li class="author">
+                                            <a href="#">BY ADMIN</a>
+                                        </li>                                                
+                                    </ul><!-- /.meta-post -->
+                                    <div class="entry-post">
+                                        <p>This is Heading the bank manager long ago won the battle for the heart of...</p>
+                                        <div class="more-link">
+                                            <a href="blog-detail.html">READ MORE</a>
+                                        </div>
+                                    </div>
+                                </div><!-- /.content-post -->
+                                <div class="overlay-effect bg-overlay-black"></div>
+                            </div>                                            
+                        </article><!-- /.post -->  
+                    </div><!-- /.owl-carousel -->                                                            
+                </div>
+            </div>
             </div>
           </div>
         </div>
@@ -757,12 +1110,19 @@
 
       <!-- Javascript -->
       <script src="./packages/jquery.min.js"></script>
+      <script src="./packages/jquery.hoverdir.js"></script>
+      <script src="packages/images-loaded.js"></script>
+      <script src="./packages/jquery.isotope.min.js"></script>
       <script src="./packages/tether.min.js"></script>
       <script
         src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
         crossorigin="anonymous"
       ></script>
+      <script src="packages/owl.carousel.min.js"></script>
+      <!-- owl carousel -->
+      <script src="packages/main.js"></script>
     </div>
+    <a id="scrollTop" class="btnClickScroll"></a>
   </body>
 </html>
